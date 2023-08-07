@@ -10,7 +10,7 @@ http
       stream.pipe(res);
     });
     stream.on('error', (err) => {
-      res.end(err.toString());
+      res.end(err);
     });
   })
   .listen(5000);
